@@ -6,6 +6,7 @@ import "./sign-in-styles.scss";
 
 import {
   signInWithGooglePopup,
+  // eslint-disable-next-line no-unused-vars
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
@@ -31,6 +32,7 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const { user } = await signInAuthUserWithEmailAndPassword(
         email,
         password
